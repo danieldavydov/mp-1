@@ -1,0 +1,83 @@
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+/* TODO: Change the fonts to be responsive using calc() */
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #a9bcd0;
+}
+
+/* Centering the page */
+#page-wrapper {
+    width: 80vw;
+}
+
+/* Header starts */
+header {
+    text-align: center;
+    padding: 2vh 0;
+    background-color: #7895b5;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Header ends here */
+
+/* Navbar starts */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-li{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-li a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/* NAV and MAIN Content Wrapper */
+.content-wrapper {
+    display: flex;
+}
+/* (END OF) NAV and MAIN Content Wrapper */
+
+
+
+/* Navbar ends here */
+
+/* IMG Styles */
+img {
+    border-radius: 5%;
+    max-height: 25vh;
+    width: auto;
+
+}
+/* End of IMG Styles */
+
