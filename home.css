@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,33 +13,32 @@
     margin: 0 auto;
 }
 
-/*Header starts*/
+/* STARTS: Header */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #7895b5;
-    padding: 1vh 1vw;
+    padding: 1vh 2vw;
+    border-bottom: 1px dashed black;
+}
+
+header h1 {
+    font-family: "WindSong", serif;
 }
 
 header p {
     font-style: italic;
 }
 
-/*Header ends*/
+/* ENDS: Header */
 
-/*Two column container starts:*/
-#content-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: #88a2be;
-}
 
+/* STARTS: Navbar */
 nav {
     width: 30%;
+    border-right: 1px dashed black;
 }
 
 nav ul {
@@ -44,23 +46,24 @@ nav ul {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #88a2be;
-    font-size: calc(2px + 2vw);
     text-align: center;
     list-style: none;
     padding-left: 0;
 }
 
 nav li {
-    font-size: calc(3px + 3vw);
-    width: 90%;
+    font-size: calc(3px + 2vw);
+    width: 60%;
     background-color: #b9c9d9;
     border-radius: 15%;
-    padding: 2vh 0;
-    margin: 5vh auto;
+    padding: 1vh 0;
+    margin: 4vh auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
 
 nav a {
+    font-family: "Delius", serif;
     text-decoration: none;
 }
 
@@ -72,7 +75,10 @@ nav li:hover {
     background-color: #7895b5;
     transition: 0.2s ease;
 }
+/* ENDS: Navbar */
 
+
+/* STARTS: Main */
 main {
     display: flex;
     flex-direction: column;
@@ -82,35 +88,35 @@ main {
 
 
 main p {
-    margin: 0 1vw;
+    margin: 2vh 2vw;
     font-size: calc(2px + 2vw);
     color: black;
 }
 
-#profile-image {
+img {
     max-width: 100%;
-}
-
-#two-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 2vh 2vw;
-}
-
-#content {
-    align-self: center;
-    width: 60%;
-    margin: 1vh 1vw;
+    border-radius: 15%;
 }
 
 #picture {
-    width: 40%;
-    margin: 1vh 1vw;
+    width: 45%;
+    margin: 0 auto;
+    padding: 1vh 1vw;
+}
+
+#cat-gif {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: "WindSong", serif;
+    color: black;
 }
 
 #page-title {
     font-style: italic;
+    font-family: "Delius", serif;
     margin: 2vw 0;
     text-align: center;
     font-size: calc(2px + 2vw);
@@ -121,19 +127,32 @@ main p {
     text-decoration: underline;
     transition: 0.5s ease;
 }
+/* ENDS: Main */
 
-/*Two column container ends*/
 
+/* WRAPPER: Navbar and Main */
+#content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #88a2be;
+}
+/* (END) WRAPPER: Navbar and Main */
+
+/* START: Footer */
 footer {
     background-color: #7895b5;
     padding: 1vh 1vw;
     display: flex;
     justify-content: space-evenly;
+    border-top: 1px dashed black;
 }
 
 footer a:hover {
     color: black;
 }
+/* END: Footer */
 
 @media screen and (max-width: 900px) {
     header {
@@ -149,6 +168,7 @@ footer a:hover {
 
     nav {
         width: 100%;
+        border-bottom: 1px dashed black;
     }
 
     nav ul {
@@ -168,6 +188,7 @@ footer a:hover {
     }
 
     nav a {
+        font-family: "Delius", serif;
         text-decoration: none;
     }
 
@@ -188,13 +209,6 @@ footer a:hover {
         max-width: 100%;
     }
 
-    #two-row {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     #content {
         align-self: center;
         width: 100%;
@@ -202,7 +216,9 @@ footer a:hover {
     }
 
     #picture {
-        margin: 1vh auto;
+        width: 35%;
+        margin: 0 auto;
+        padding: 1vh 1vw;
     }
 
     #page-title {
