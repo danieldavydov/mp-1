@@ -3,38 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta name="description" content="Daniel Davydov's Online Resume">
+    <link type="text/css" rel="stylesheet" href="styles/employment.css">
     <title>Employment | Resume</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Daniel Davydov</h1>
-        <p>My Online Resume</p>
-    </header>
+    <div id="page-wrapper">
 
-    <!-- Nav -->
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="./employment.html">Employment</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./skills.html">Skills</a></li>
-            <li><a href="./about-me.html">About Me</a></li>
-        </ul>
-    </nav>
+        <!-- START: Header -->
+        <header>
+            <h1>Daniel Davydov</h1>
+            <p>Online Resume</p>
+        </header>
+        <!-- END: Header -->
 
-    <!-- Main Content -->
-    <main>
-        <h1 class="main-content-header">Employment</h1>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>All Rights Reserved by Daniel Davydov <a href="./index.html">Credits</a> &copy;</p>
-    </footer>
+        <!-- Content Wrapper: Wraps navbar with main content -->
+        <div id="content-wrapper">
+            <!-- START: Navbar -->
+            <nav>
+                <ul>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                    <li class="nav-li"><a href="education.html">Education</a></li>
+                    <li class="nav-li"><a href="employment.html">Employment</a></li>
+                    <li class="nav-li"><a href="projects.html">Projects</a></li>
+                    <li class="nav-li"><a href="skills.html">Skills</a></li>
+                    <li class="nav-li"><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+            <!-- END: Navbar -->
+
+            <!-- START: Main Content -->
+            <main>
+                <h3 id="page-title">Employment</h3>
+
+                <!-- Job 1 -->
+                <div class="picture">
+                    <img src="src/bu.png" alt="Boston University Logo">
+                </div>
+                <h4 class="school">Boston University</h4>
+                <h5 class="position">Grader for CS330</h5>
+                <h6 class="timeline">Sep 2024 - Dec 2024</h6>
+                <div class="content">
+                    <p>
+                        Graded assignments for CS330 - Analysis of Algorithms, a 200+ student course covering advanced
+                        algorithm
+                        techniques and theoretical computer science concepts
+                    </p>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="picture">
+                    <img src="src/wave.png" alt="Wave Learning Festival Logo">
+                </div>
+                <h4 class="school">Wave Learning Festival</h4>
+                <h5 class="position">Software Engineer Intern</h5>
+                <h6 class="timeline">June 2024 - Present</h6>
+                <div class="content">
+                    <p>
+                        Built front-end React.js app with e2e testing used by over 10,000 students worldwide in more
+                        than 60 countries. Debugged production code and wrote unit/integration tests to ensure a
+                        reliable, and maintainable code-base,
+                        identifying and resolving 2 critical bugs. Lead the development of Wave's flagship seminar
+                        service by analyzing and handling course data, allowing hundreds
+                        of students to take courses over summer.
+                    </p>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="picture">
+                    <img src="src/outlier.png" alt="Outlier AI Logo">
+                </div>
+                <h4 class="school">Outlier AI</h4>
+                <h5 class="position">Software Engineer Intern</h5>
+                <h6 class="timeline">June 2024 - August 2024</h6>
+                <div class="content">
+                    <p>
+                        Integrated RLHF methodologies into Outlier AI models, significantly enhancing their performance
+                        and accuracy in
+                        complex decision-making scenarios. Delivered detailed feedback to enhance model performance,
+                        while developing robust test cases to ensure efficiency
+                        and effectiveness of AI outputs. Conducted thorough code reviews of SQL queries to ensure
+                        accuracy and compliance with customer requirements,
+                        identifying and resolving 4 critical issues and improving overall code quality.
+                    </p>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="picture">
+                    <img src="src/alliconnect.png" alt="Alli Connect Logo">
+                </div>
+                <h4 class="school">Alli Connect</h4>
+                <h5 class="position">Software Engineer Intern</h5>
+                <h6 class="timeline">June 2023 - August 2023</h6>
+                <div class="content">
+                    <p>
+                        Contracted by a B2B mental-healthcare SaaS startup that matches clients to uniquely selected
+                        healthcare
+                        professional using machine learning. Implemented React Native, Typescript, and Expo to build a
+                        cutting-edge mobile application; achieved a 30%
+                        reduction in development time while delivering a seamless user experience. Collaborated with
+                        other interns to create UI/UX wireframes using Figma for future iterations of the application.
+                        Worked closely with a cross-functional engineering team of 7 to troubleshoot and optimize code,
+                        accelerating our
+                        product development cycle by 2 weeks.
+                    </p>
+                </div>
+            </main>
+            <!-- END: Main Content -->
+        </div>
+        <!-- END: Content Wrapper (Navbar with main) -->
+
+        <!-- START: Footer -->
+        <footer>
+            <p>All Rights Reserved by Daniel Davydov <a href="credits.html"> Credits</a> &copy;</p>
+        </footer>
+        <!-- END: Footer -->
+    </div>
 </body>
 
 </html>

@@ -137,14 +137,14 @@ img {
 }
 
 .timeline {
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1.5vw);
     font-family: "Delius", serif;
     color: black;
     text-align: center;
 }
 
-.grade {
-    font-size: calc(2px + 1.35vw);
+.position {
+    font-size: calc(2px + 2vw);
     font-family: "Delius", serif;
     color: black;
     text-align: center;
