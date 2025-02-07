@@ -3,23 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./home.css">
+    <meta name="description" content="Daniel Davydov's Online Resume">
+    <link type="text/css" rel="stylesheet" href="./home.css">
     <title>Home | Resume</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Daniel Davydov</h1>
-        <p>My Online Resume</p>
-    </header>
-
-    <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-        <!-- Nav and Main Content Wrapper -->
-        <div class="content-wrapper">
-            <!-- Nav -->
+        <!-- START: Header -->
+        <header>
+            <h1>Daniel Davydov</h1>
+            <p>Online Resume</p>
+        </header>
+        <!-- END: Header -->
+
+
+        <!-- Content Wrapper: Wraps navbar with main content -->
+        <div id="content-wrapper">
+            <!-- START: Navbar -->
             <nav>
                 <ul>
                     <li class="nav-li"><a href="./index.html">Home</a></li>
@@ -30,25 +32,48 @@
                     <li class="nav-li"><a href="./about-me.html">About Me</a></li>
                 </ul>
             </nav>
+            <!-- END: Navbar -->
 
-            <!-- Main Content -->
+            <!-- START: Main Content -->
             <main>
-                <h1 class="main-content-header">Home</h1>
-                <img src="./src/me.jpeg" alt="picture of daniel davydov">
-                <p>Hi, my name is Daniel Davydov. Welcome to my online resume! Let's get to know each other a bit! I'm
-                    currently
-                    a Senior studying Computer Science at Boston University. As my undergraduate career comes to its
+                <h3 id="page-title">Welcome</h3>
+
+                <!-- Image and Text (2 element row) -->
+                <div id="two-row">
+                    <div id="picture">
+                        <img id="profile-image" src="./src/me.jpeg" alt="Daniel Davydov">
+                    </div>
+                    <div id="content">
+                        <p>
+                            Hi, my name is Daniel Davydov. Welcome to my online resume! Let's get to know each other a
+                            bit! I'm
+                            currently
+                            a Senior studying Computer Science at Boston University.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional written content -->
+                <p>
+                    As my undergraduate career comes to
+                    its
                     end, I
                     will
-                    leverage the skills I learned to begin my new career as a software engineer. As of right now, I am
+                    leverage the skills I learned to begin my new career as a software engineer. As of right
+                    now, I am
                     planning
-                    on continuing my education after acquiring some real-world software engineering experience. </p>
+                    on continuing my education after acquiring some real-world software engineering experience.
+                </p>
             </main>
+            <!-- END: Main Content -->
         </div>
-        <!-- Footer -->
+        <!-- END: Content Wrapper (Navbar with main) -->
+
+        <!-- START: Footer -->
         <footer>
-            <p>All Rights Reserved by Daniel Davydov <a href="credits.html">Credits</a> &copy;</p>
+            <p>All Rights Reserved by Daniel Davydov <a href="./credits.html"> Credits</a> &copy;</p>
         </footer>
+        <!-- END: Footer -->
     </div>
 </body>
 
