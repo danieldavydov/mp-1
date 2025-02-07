@@ -11,6 +11,7 @@
 #page-wrapper {
     width: 80vw;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 /* STARTS: Header */
@@ -82,7 +83,7 @@ main {
     flex-direction: column;
     width: 70%;
     background-color: #dae3eb;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -153,135 +154,6 @@ footer a:hover {
 }
 /* END: Footer */
 
-@media screen and (max-width: 900px) {
-    #content-wrapper {
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-    }
-
-        /* STARTS: Navbar */
-        nav {
-            width: 30%;
-            border-right: 1px dashed black;
-        }
-    
-        nav ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            background-color: #88a2be;
-            text-align: center;
-            list-style: none;
-            padding-left: 0;
-        }
-    
-        nav li {
-            font-size: calc(3px + 2vw);
-            width: 60%;
-            background-color: #b9c9d9;
-            border-radius: 15%;
-            padding: 1vh 0;
-            margin: 4vh auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
-        }
-    
-    
-        nav a {
-            font-family: "Delius", serif;
-            text-decoration: none;
-        }
-    
-        nav a:hover {
-            font-style: italic;
-        }
-    
-        nav li:hover {
-            background-color: #7895b5;
-            transition: 0.2s ease;
-        }
-    
-        /* ENDS: Navbar */
-    
-    
-        /* STARTS: Main */
-        main {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            background-color: #dae3eb;
-        }
-    
-    
-        main p {
-            margin: 2vh 2vw;
-            font-size: calc(2px + 2vw);
-            color: black;
-        }
-    
-        img {
-            max-width: 100%;
-            border-radius: 15%;
-        }
-    
-        #picture {
-            width: 45%;
-            margin: 0 auto;
-            padding: 1vh 1vw;
-        }
-    
-        #cat-gif {
-            width: 35%;
-            margin: 0 auto;
-        }
-    
-        .name {
-            font-family: "WindSong", serif;
-            color: black;
-        }
-    
-        #page-title {
-            font-style: italic;
-            font-family: "Delius", serif;
-            margin: 2vw 0;
-            text-align: center;
-            font-size: calc(2px + 2vw);
-            color: black;
-        }
-    
-        #page-title:hover {
-            text-decoration: underline;
-            transition: 0.5s ease;
-        }
-    
-        /* ENDS: Main */
-    
-    
-        /* WRAPPER: Navbar and Main */
-        #content-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            background-color: #88a2be;
-        }
-    
-        /* (END) WRAPPER: Navbar and Main */
-    
-        /* START: Footer */
-        footer {
-            background-color: #7895b5;
-            padding: 1vh 1vw;
-            display: flex;
-            justify-content: space-evenly;
-            border-top: 1px dashed black;
-        }
-    
-        footer a:hover {
-            color: black;
-        }
-}
-
 @media screen and (max-width: 750px) {
     header {
         align-items: center;
@@ -290,7 +162,6 @@ footer a:hover {
 
     #content-wrapper {
         width: 100%;
-        height: 100vh;
         flex-direction: column;
     }
 
