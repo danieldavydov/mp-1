@@ -99,7 +99,7 @@ img {
     border-radius: 15%;
 }
 
-#picture {
+.picture {
     width: 45%;
     margin: 0 auto;
     padding: 1vh 1vw;
@@ -127,6 +127,20 @@ img {
 #page-title:hover {
     text-decoration: underline;
     transition: 0.5s ease;
+}
+
+.school {
+    /* change text to be responsive */
+    font-family: "Delius", serif;
+    color: black;
+    text-align: center;
+}
+
+.timeline {
+    /* change text to be responsive */
+    font-family: "Delius", serif;
+    color: black;
+    text-align: center;
 }
 
 /* ENDS: Main */
@@ -211,13 +225,13 @@ footer a:hover {
         max-width: 100%;
     }
 
-    #content {
+    .content {
         align-self: center;
         width: 100%;
         margin: 1vh 1vw;
     }
 
-    #picture {
+    .picture {
         width: 35%;
         margin: 0 auto;
         padding: 1vh 1vw;
