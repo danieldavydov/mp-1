@@ -74,6 +74,7 @@ nav li:hover {
     background-color: #7895b5;
     transition: 0.2s ease;
 }
+
 /* ENDS: Navbar */
 
 
@@ -127,6 +128,7 @@ img {
     text-decoration: underline;
     transition: 0.5s ease;
 }
+
 /* ENDS: Main */
 
 
@@ -138,6 +140,7 @@ img {
     position: relative;
     background-color: #88a2be;
 }
+
 /* (END) WRAPPER: Navbar and Main */
 
 /* START: Footer */
@@ -152,6 +155,7 @@ footer {
 footer a:hover {
     color: black;
 }
+
 /* END: Footer */
 
 @media screen and (max-width: 750px) {
