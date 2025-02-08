@@ -3,38 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta name="description" content="Daniel Davydov's Online Resume">
+    <link type="text/css" rel="stylesheet" href="styles/skills.css">
     <title>Skills | Resume</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Daniel Davydov</h1>
-        <p>My Online Resume</p>
-    </header>
+    <div id="page-wrapper">
 
-    <!-- Nav -->
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="./employment.html">Employment</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./skills.html">Skills</a></li>
-            <li><a href="./about-me.html">About Me</a></li>
-        </ul>
-    </nav>
+        <!-- START: Header -->
+        <header>
+            <h1>Daniel Davydov</h1>
+            <p>Online Resume</p>
+        </header>
+        <!-- END: Header -->
 
-    <!-- Main Content -->
-    <main>
-        <h1 class="main-content-header">Skills</h1>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>All Rights Reserved by Daniel Davydov <a href="./index.html">Credits</a> &copy;</p>
-    </footer>
+        <!-- Content Wrapper: Wraps navbar with main content -->
+        <div id="content-wrapper">
+            <!-- START: Navbar -->
+            <nav>
+                <ul>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                    <li class="nav-li"><a href="education.html">Education</a></li>
+                    <li class="nav-li"><a href="employment.html">Employment</a></li>
+                    <li class="nav-li"><a href="projects.html">Projects</a></li>
+                    <li class="nav-li"><a href="skills.html">Skills</a></li>
+                    <li class="nav-li"><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+            <!-- END: Navbar -->
+
+            <!-- START: Main Content -->
+            <main>
+                <h3 id="page-title">Skills</h3>
+
+                <!-- Cert 1 / Skill 1 -->
+                <div class="picture">
+                    <img src="src/google-cloud.png" alt="Google Cloud Certification">
+                </div>
+                <h4 class="school">Google Cloud Certification</h4>
+                <div class="content">
+                    <p>
+                        I recieved my Google Cloud Certification in my junior year here at Boston University. So far, it
+                        has not been super helpful in my CS journey at Boston University, but I am sure I'll be able to
+                        leverage it later in my software engineering career.
+                    </p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="picture">
+                    <img src="src/python.png" alt="Python Programming Language Logo">
+                </div>
+                <h4 class="school">Python</h4>
+                <div class="content">
+                    <p>
+                        Python was the first programming language I learned, and it was the first language that I fell
+                        in love with. In my opinion, it is by far the best programming language for beginners, because
+                        of its easy to learn, and extremely versitile.
+                    </p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="picture">
+                    <img src="src/java.png" alt="Java Programming Language Logo">
+                </div>
+                <h4 class="school">Java</h4>
+                <div class="content">
+                    <p>
+                        Java is one of my favorite programming languages to date. It's extremely durable, and widely
+                        used. Throughout my tenure at BU, I've used Java countless times, and created many projects
+                        outside of class.
+                    </p>
+                </div>
+            </main>
+            <!-- END: Main Content -->
+        </div>
+        <!-- END: Content Wrapper (Navbar with main) -->
+
+        <!-- START: Footer -->
+        <footer>
+            <p>All Rights Reserved by Daniel Davydov <a href="credits.html"> Credits</a> &copy;</p>
+        </footer>
+        <!-- END: Footer -->
+    </div>
 </body>
 
 </html>
