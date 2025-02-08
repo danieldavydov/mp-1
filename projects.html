@@ -3,38 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta name="description" content="Daniel Davydov's Online Resume">
+    <link type="text/css" rel="stylesheet" href="styles/projects.css">
     <title>Projects | Resume</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Daniel Davydov</h1>
-        <p>My Online Resume</p>
-    </header>
+    <div id="page-wrapper">
 
-    <!-- Nav -->
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="./employment.html">Employment</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./skills.html">Skills</a></li>
-            <li><a href="./about-me.html">About Me</a></li>
-        </ul>
-    </nav>
+        <!-- START: Header -->
+        <header>
+            <h1>Daniel Davydov</h1>
+            <p>Online Resume</p>
+        </header>
+        <!-- END: Header -->
 
-    <!-- Main Content -->
-    <main>
-        <h1 class="main-content-header">Projects</h1>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>All Rights Reserved by Daniel Davydov <a href="./index.html">Credits</a> &copy;</p>
-    </footer>
+        <!-- Content Wrapper: Wraps navbar with main content -->
+        <div id="content-wrapper">
+            <!-- START: Navbar -->
+            <nav>
+                <ul>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                    <li class="nav-li"><a href="education.html">Education</a></li>
+                    <li class="nav-li"><a href="employment.html">Employment</a></li>
+                    <li class="nav-li"><a href="projects.html">Projects</a></li>
+                    <li class="nav-li"><a href="skills.html">Skills</a></li>
+                    <li class="nav-li"><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+            <!-- END: Navbar -->
+
+            <!-- START: Main Content -->
+            <main>
+                <h3 id="page-title">Projects</h3>
+
+                <!-- Project 1 -->
+                <div class="picture">
+                    <img src="src/catspot.png" alt="CatSpot Project">
+                </div>
+                <h4 class="proj-name">CatSpot</h4>
+                <h5 class="tech">Python (Django), HTML, CSS, Heroku, Git, Image Classification</h5>
+                <a class="proj-link" href="https://protected-savannah-58752-99c8687154d1.herokuapp.com/project/"
+                    target="_blank">Checkout CatSpot</a>
+                <div class="content">
+                    <p>
+                        Designed and implemented a fully functional gamified social media platform that allows users to
+                        compete with
+                        friends by earning points by posting pictures of cats. An image classification model identifies
+                        the cat breed in the photo being uploaded. The point reward algorithm is
+                        based on the image classification model's prediction.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="picture">
+                    <img src="src/newsaid.png" alt="NewsAId Project">
+                </div>
+                <h4 class="proj-name">NewsAId</h4>
+                <h5 class="tech">TypeScript, React, Next.js, Tailwind CSS, Python, SQL</h5>
+                <div class="content">
+                    <p>
+                        Collaborated with a team of 3 to design and develop a website that allows users to create news
+                        articles based on
+                        brief descriptions. Users specify their preferences (desired length, style, and tone), and the
+                        AI model creates a news article that they
+                        can send to their friends with a temporary URL.
+                    </p>
+                </div>
+
+                <!-- Calculator -->
+                <div id="calc">
+                    <h4 class="proj-name">Calculator</h4>
+                    <!-- Calc Input -->
+                    <div class="boxes">
+                        <label for="first-num">First Number:</label>
+                        <input type="text" id="first-num">
+                        <br>
+                        <label for="first-num">Second Number:</label>
+                        <input type="text" id="second-num">
+                    </div>
+                    <!-- Calc Buttons -->
+                    <div id="calc-buttons">
+                        <button class="buttons" type="button" onclick="doAdd()">+</button>
+                        <button class="buttons" type="button" onclick="doSubtract()">-</button>
+                        <button class="buttons" type="button" onclick="doDivide()">/</button>
+                        <button class="buttons" type="button" onclick="doMultiply()">*</button>
+                        <button class="buttons" type="button" onclick="doPower()">**</button>
+                        <button class="buttons" type="button" onclick="doClear()">Clear</button>
+                    </div>
+                    <p id="output"></p>
+                </div>
+
+            </main>
+            <!-- END: Main Content -->
+        </div>
+        <!-- END: Content Wrapper (Navbar with main) -->
+
+        <!-- START: Footer -->
+        <footer>
+            <p>All Rights Reserved by Daniel Davydov <a href="credits.html"> Credits</a> &copy;</p>
+        </footer>
+        <!-- END: Footer -->
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>

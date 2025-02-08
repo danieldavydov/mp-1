@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
 }
 
 #page-wrapper {
@@ -25,10 +25,12 @@ header {
 
 header h1 {
     font-family: "WindSong", serif;
+    color: white;
 }
 
 header p {
     font-style: italic;
+    color: white;
 }
 
 /* ENDS: Header */
@@ -64,6 +66,7 @@ nav li {
 nav a {
     font-family: "Delius", serif;
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
@@ -129,25 +132,39 @@ img {
     transition: 0.5s ease;
 }
 
-.school {
+.proj-name {
     font-size: calc(2px + 2.5vw);
     font-family: "Delius", serif;
     color: black;
     text-align: center;
 }
 
-.timeline {
-    font-size: calc(2px + 1.5vw);
+.tech {
+    font-size: calc(2px + 2vw);
     font-family: "Delius", serif;
     color: black;
     text-align: center;
 }
 
-.position {
+.proj-link {
     font-size: calc(2px + 2vw);
     font-family: "Delius", serif;
     color: black;
     text-align: center;
+    border: 1px solid black;
+    width: 40%;
+    margin: 1vh auto;
+    padding: 1vh 0;
+    text-decoration: none;
+}
+
+.proj-link:hover {
+    background-color: #88a2be;
+    text-decoration: underline;
+}
+
+.content {
+    border-bottom: 1px dashed black;
 }
 /* ENDS: Main */
 
@@ -235,6 +252,7 @@ footer a:hover {
         align-self: center;
         width: 100%;
         margin: 1vh 1vw;
+        border-bottom: 1px dashed black;
     }
 
     .picture {
