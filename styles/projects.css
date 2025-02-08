@@ -25,12 +25,10 @@ header {
 
 header h1 {
     font-family: "WindSong", serif;
-    color: white;
 }
 
 header p {
     font-style: italic;
-    color: white;
 }
 
 /* ENDS: Header */
@@ -66,7 +64,6 @@ nav li {
 nav a {
     font-family: "Delius", serif;
     text-decoration: none;
-    color: white;
 }
 
 nav a:hover {
